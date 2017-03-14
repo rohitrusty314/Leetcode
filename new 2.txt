@@ -1,0 +1,47 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    
+    private final static HashMap<Integer, Integer> valCount = new HashMap<Integer, Integer>();
+    
+    public int[] findMode(TreeNode root) {
+        if(root == null){int[] temp = {}; return temp;}
+        
+        travTree(root);
+        int max = 0, i =0;
+        //int[] nums = new int[valCount.size()];
+        
+        for(Integer key:valCount.keySet()){
+            //System.out.println(key+" "+valCount.get(key));
+            if(valCount.get(key)>max) max = valCount.get(key);
+        }
+            
+        //System.out.println(max);
+        for(Integer key:valCount.keySet()) if(valCount.get(key)==max) i++;
+        int[] nums = new int[i];
+        
+        i = 0;
+        for(Integer key:valCount.keySet()) if(valCount.get(key)==max){nums[i] = key; i++;}
+        
+        return nums;
+        
+    }
+    
+    private void travTree(TreeNode root){
+        if(root!=null){
+            travTree(root.left);
+            if(valCount.containsKey(root.val)) valCount.put(root.val,valCount.get(root.val)+1);
+            else valCount.put(root.val,1);
+            travTree(root.right);
+        }
+        
+        
+    }
+}

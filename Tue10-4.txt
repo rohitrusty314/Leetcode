@@ -1,0 +1,373 @@
+Tuesday (201 Hastings Hall) - 24 students
+
+1. 10:00 am - 11:00 pm - Rohit, Wenjun
+Day: Tuesday, Time: 10:00:00, Room: Hastings 201, Occupied/Max: 4/4
+CCS ID: ghanghas
+
+q1
+76 paused? in world interpretation
+doddad constructor template has color - incorrect name convention
+doddad - observer template improper indentation
+is-pause-key-event? has examples and strategy missing
+Follow up - Why is part of the data definition?
+Initial world strategy
+Many functions have derivables missing - design recipe not followed - world-to-scene, place-star
+
+q2
+Functions have deliverables missing - is-color-change-key-event?
+Incorrect type in make-doddad - used Color - defined color
+113, 114 interpretation of dx dy
+pointer has observer template missing
+
+-----------------------------------------------------------------------------
+
+
+CCS ID: viranchipaliwal
+
+q1
+Doddad constructor template - arguments mismatch, interpretation missing,
+incomplete observer template
+doodad-y-tentative contract incorrect - several other functions - lacks understanding
+
+q2
+Doddad constructor template - arguments mismatch, interpretation missing,
+incomplete observer template
+DoddadColor template missing
+contract incorrect - several functions - lacks understanding
+place-doodad-square, place-doodad-star : function can be shortened
+
+
+
+
+
+
+CCS ID: abhishekmulay
+
+Doddad constructor template - incorrect - what is a constructor template?
+Color is a String - can it take any valid string value?
+world-with-next-color-for, check-y, check-vx : Functions readability needs to be improved
+
+CCS ID: saurin94
+
+q1:
+doddad template wrong
+move-y, move-vy, core-bounce-change-color: Strategy way off
+
+q2
+doddad template wrong
+place-radial-star - function too long
+-----------------------------------------------------------------------------
+
+2. 11:00 am - 12:00 pm - Rohit, Wenjun
+Day: Tuesday, Time: 11:00:00, Room: Hastings 201, Occupied/Max: 4/4
+CCS ID: mrajput
+q1
+Data def? answered well
+Defined xpos and ypos, velocities as Real? should be Integer
+How core bounce has been handled? answered well.
+EXAMPLES, and stratgey missing for functions
+
+
+
+q2
+Animation stuck at the edge
+Data def? Changes made? answered well
+Stucts separated? doodad-x takes a doddad - contract incorrect - several function takes/returns a Doddad
+What kind of data can doddad? answered
+How jerkless dragging is handled? answered
+
+Examples strategy missing - several function
+Explained star-after-button-down explained well.
+Function name - should be according 
+
+
+
+
+-----------------------------------------------------------------------------------------
+
+CCS ID: jhalak1992
+
+q1
+
+Data def? 
+world interpretation can be improved
+World lowercase - answered should be uppercase
+color as String - incorrect
+How core bounce was handled? Answered
+
+
+q2
+changes made for q2? Answered well
+Constructor template incorrect
+mx, my interpretation can be improved 
+jerkless drag - explained well
+How black dot was drawn on the scene? Answered
+place-doddad-star - readability can be improved by breaking into helpers
+Function names need to be improved - 
+Contracct, purpose statemen, examples  missing 
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+CCS ID: linghanx
+
+q1
+Data def? color as string - has separate defs, can be used in a better way
+Doddad-star in world, defined doddad
+How core bounce was handled? Answered well
+core-bounce function too long - readability can be improved by breaking into helpers
+
+
+q2
+Changes made from q1 - answered well
+world-after-mouse-event: explained well
+examples, and strategy missing - doddad-after-drag
+How black dot was managed? answered well
+on c key event only selected doddad should change color - both doddads are changing color
+
+
+
+
+CCS ID: aman11
+q1
+Data def explanation - 
+Observer template is commented
+Color as String - Not any string is acceptable
+Non-neg int as center for doddad - will not be non-neg int always
+Function too long - act-according-cond - function not readable
+Repeated code - can it be improved? 
+
+q2
+80 char width limit crossed
+What outline chosen for the star? answered
+Incomplete test coverage. - unable to 
+Explain Data def - changes made - answered
+How jerkless drag implemented? Answered
+Approach for drawing the black dot? 
+call-star, doddad-tx, etc contract incorrect, mistake is repeated 
+Interpretation: doddad - saving mouse coordinates for every mouse action? unanswered
+Follow-up: when the values get updated? answered
+Function name not according style guide - name should be what is returned as output
+
+-------------------------------------------------------------------------------------------------------------
+
+
+2. 12:00 pm - 1:00 pm - Rohit, Wenjun
+Day: Tuesday, Time: 12:00:00, Room: Hastings 201, Occupied/Max: 4/4
+CCS ID: mingchaowu
+CCS ID: vamsiatluri
+CCS ID: surbhi910
+CCS ID: mahima
+-------------------------------------------------------------------------------------------------------------------
+
+2. 1:00 pm - 2:00 pm - Rohit, Wenjun
+Day: Tuesday, Time: 13:00:00, Room: Hastings 201, Occupied/Max: 4/4
+CCS ID: patrickyang
+data def?  
+World take star and square - made mystar and mysquare
+
+doddad explained as itemisation - incorrect explanation - it is mixed
+
+Doddad observer template incorrect
+mystar vx and vy as RealNum,
+ 
+doddad has mySquare - square
+how core bounce?  Explained
+beyond-right function too long
+two stars - no square
+
+use constants 
+
+q2:
+changes made? explained
+selected-x interpretation can be improved
+
+jerkless drag - is jerky
+world-after-drag can be broken to helpers
+examples and strategy missing from helper functions
+given is missing
+
+CCS ID: shikharprasoon
+
+q1
+Data def? 
+181 template contract incorrect 
+Core bounce? answered
+
+
+
+q2
+incomplete q2
+
+
+
+CCS ID: marcotte628
+
+q1
+Data def? 
+Template paranthese - missing for before and after function
+
+doddad - color of type string 
+Image - interpretation in doddad
+How core bounce was handled? 
+Function names should be more informative -  xH-yH
+if cond true false
+
+q2
+changes made? 
+make-doodad Integer INTEGER
+No need to provide helpers
+How jerkless drag was handled? 
+button-down, button-up, after drag - explained well
+
+
+CCS ID: vaibhav
+
+q1
+Data def? explained
+doddad had Color, Using ImageCOlor
+Template has state - should be color
+How core bounce handled? explained
+Examples missing - design recipe needs to be followed
+
+q2
+changes made? explained
+Constructor template - fields do not match
+Interpretation can be improved
+
+jerkless dragging approach?  explained
+How the black do is being drawn? explained
+
+
+
+-----------------------------------------------------------------------------------------------------------
+
+3. 2:00 pm - 3:00 pm - Rohit, Himanshu
+Day: Tuesday, Time: 14:00:00, Room: Hastings 201, Occupied/Max: 4/4
+CCS ID: sushmitacha
+>>>>>
+
+q1
+Color 
+incorrect casing 
+possible values are not string
+observer template missing - not evident
+
+doodad casing is incorrect
+doodad has color field of type String - should be color as defined above
+crossing 80 char width limit
+examples and strategy missing from functions - new-doodad
+next-color explanation - contract inconsistent 
+
+
+q2
+jerkless drag? 
+black dot lags while following when mouse is moved in some cases?
+required followups to explain what's going on
+What conditions are being checked - initially confused - should understand and be able to understand the program
+
+Data type, circle1, naming convention not followed
+incomplete test coverage
+circle1-after-mouse-event
+Examples missing
+strategy missing
+
+
+
+
+
+
+
+
+>>>>>>
+
+CCS ID: aeppacher
+>>>>>
+q1
+data def?
+interpretated paused? but filed is paused-stat?
+observer template for world incorrect - world-paused-stat?
+doddad observer template
+given missing : world-to-scene
+examples strategies are missing
+process-x-bounce, y-bounce too long - can be broken into helpers
+
+
+
+
+q2
+program throws an error check location
+incomplete test converage
+jerkless drag not implemented
+black dot does not appear
+world, doddad constructor template - field mismatch
+several typos
+given, examples and strategies missing - desing recipe not followed
+
+
+
+>>>>>>
+
+CCS ID: somanshu
+
+q1:
+80 char width crossed
+color change order
+data def? explained
+Followup: why two structs? explained
+example and given missing from world to scene
+Arguments take how many arguments - answered
+792 - can any color be passed - it it will cause the program to crash - 
+	- replied an error message can be passed back - violates the contract 
+	
+
+	
+	
+q2
+jerkless dragging? needed followup - explained
+requiring picturing-programs - for selecting radial star
+constructor template has inconsistent with the fields with struct
+
+
+
+
+
+CCS ID: 4kshay
+>>>>>>
+q1
+
+data def? explained well
+Color template missing
+toggle-color function name can be improved
+few test cases don't have a failure message.
+
+
+q2
+MX, MY - casing is not consistent - not data types - student's answer
+examples missing - tests and examples should be mentioned separatlu
+
+>>>>>>>
+
+
+3. 3:00 pm - 4:00 pm - Rohit, Himanshu
+Day: Tuesday, Time: 15:00:00, Room: Hastings 201, Occupied/Max: 4/4
+CCS ID: deepakbansal
+CCS ID: shruthiyk
+CCS ID: liaojunbo1221
+CCS ID: dipanjan
+
+
+
+
+Thursday (114 West Village F) - 24 students
+
+12. 2:00 pm - 3:00 pm - Rohit, Sankar (1 hour slot)
+
+13. 3:00pm - 4:00 pm - Rohit, Wenjun (1 hour slot)
+
+Thursday: 299 Ryder - 8 students
+
+14. 6:00pm - 7:00pm - Rohit, Sankar
+
+14. 7:00pm - 8:00pm - Rohit, Sankar

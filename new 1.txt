@@ -1,0 +1,59 @@
+public class Solution {
+    public boolean checkSubarraySum(int[] nums, int k) {
+        int n = nums.length;
+        int[] c = new int[n];
+        if(n<2) return false;
+        
+        for(int i=0;i<n;i++){
+            for(int j=i;j>=0;j--){
+                
+                //if(i == 0) c[j] = nums[i]; break;
+                c[j] = nums[i] + c[j];
+                
+                
+                
+                if(i!=j){
+                    
+                    if(c[j] == 0 && k == 0) return true;
+                    else if(k != 0 && c[j]%k == 0) return true;
+                }
+            }
+            //for(int x=0;x<n;x++) System.out.println(c[x]+" ");
+            
+            
+        }
+      
+        
+        return false;
+    }
+}
+
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public TreeNode sortedArrayToBST(int[] nums) {
+        if(nums.length == 0) return null;
+        
+        TreeNode root = makeTree(nums, 0, nums.length-1);
+        return root;
+        
+    }
+    
+    private TreeNode makeTree(int[] nums, int p, int r){
+        if(p<r){
+            int q = (int) Math.floor((p+r)/2);
+            TreeNode root = new TreeNode(nums[q]);
+            root.left = makeTree(nums, p, q);
+            root.right = makeTree(nums, q+1, r);
+            return root;
+        }
+        return null;
+    }
+}
